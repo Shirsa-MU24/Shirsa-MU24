@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do- List app</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+
+  <!-- appens innehåll -->
+  <div class="container">
+    
+    <div class="todo-app">
+        <!-- title -->
+      <h2>To-Do-List</h2>
+        <!-- Inputfält och lägg till-knapp -->
+         <div class="row">
+          <!-- inmätningsfält -->
+            <input type="text" id="input-box" placeholder="Lägg till ny todo..">
+            <button onclick="addTask()">add</button><!-- knapp som lägger till uppgift när den klickas -->
+          </div>
+
+          <!-- lista fö ratt visa alla uppgifter -->
+          <ul id="list-container">
+            <!--<li>task 1</li>
+            <li>task 2</li>
+            <li>task 3</li>-->
+            
+          </ul>
+
+    </div>
+
+  </div>
+
+  <script src="todo.js"></script> <!-- länkar till JS -->
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* Grundläggande styling för hela sidan */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  /* app-container  */
+  .todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius:  10px;
+  }
+
+  /* titel för appen */
+  .todo-app h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+  }
+/* flexbox för input-fält och knapp */
+ .row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+ }
+
+ /* stylning för inmätningsfältet */
+ input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-size: 14px;
+ }
+
+ /* stylning för knappen */
+ button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+
+ }
+  
+ /* stylning för listan och dess element */
+  ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+    
+  }
+
+  /*ul li::before{
+    content:  '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: '';
+    background-position: center;
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+  }*/
+
+
+  /* när en uppgift är markerad som klar */
+  ul li.checked{
+    text-decoration: line-through;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #752e2e;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  /* ikonen för att ta bort uppgift i span elementen */
+   ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    color: #555;
+   }
+
+
+   /* höver-effekt för borttagningsikonen */
+   ul li span:hover{
+    background: #edeef0;
+
+   }
+
+  
